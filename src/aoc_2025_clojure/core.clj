@@ -1,7 +1,12 @@
 (ns aoc-2025-clojure.core
-  (:gen-class))
+  (:require [aoc-2025-clojure.utils :refer :all])
+  (:require aoc-2025-clojure.solutions.day-01))
 
 (defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+  "Execute the solution to the given day's given problem."
+  [day problem & args]
+  (println (apply
+            (deref (resolve (symbol
+                             (str "aoc-2025-clojure.solutions.day-" (two-digit-num day))
+                             (str "solve" problem))))
+            args)))
