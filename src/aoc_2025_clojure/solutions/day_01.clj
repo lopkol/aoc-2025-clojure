@@ -1,6 +1,8 @@
 (ns aoc-2025-clojure.solutions.day-01
   (:require [aoc-2025-clojure.utils :refer :all]))
 
+;; input parsing
+
 (defn parse-line [line]
   (let [sign (if (= (first line) \R) 1 -1)
         n    (parse-int (subs line 1))]
@@ -10,7 +12,7 @@
   (with-open [rdr (clojure.java.io/reader (str "./inputs/" filename ".txt"))]
     (map parse-line (reduce conj [] (line-seq rdr)))))
 
-
+;; problem 1
 
 (defn count-zeros [input]
   (second (reduce (fn [acc move] (let [next-pos  (mod (+ (first acc) move) 100)
@@ -21,7 +23,7 @@
   (let [input (read-input filename)]
     (count-zeros input)))
 
-
+;; problem 2
 
 (defn count-touching-zero [current-pos move]
   (let [rem-move (rem move 100)
