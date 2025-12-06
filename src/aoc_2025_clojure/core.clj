@@ -3,7 +3,8 @@
   (:require aoc-2025-clojure.solutions.day-01)
   (:require aoc-2025-clojure.solutions.day-02)
   (:require aoc-2025-clojure.solutions.day-03)
-  (:require aoc-2025-clojure.solutions.day-04))
+  (:require aoc-2025-clojure.solutions.day-04)
+  (:require aoc-2025-clojure.solutions.day-05))
 
 (defn -main
   "Execute the solution to the given day's given problem."
