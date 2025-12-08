@@ -6,7 +6,8 @@
   (:require aoc-2025-clojure.solutions.day-04)
   (:require aoc-2025-clojure.solutions.day-05)
   (:require aoc-2025-clojure.solutions.day-06)
-  (:require aoc-2025-clojure.solutions.day-07))
+  (:require aoc-2025-clojure.solutions.day-07)
+  (:require aoc-2025-clojure.solutions.day-08))
 
 (defn -main
   "Execute the solution to the given day's given problem."

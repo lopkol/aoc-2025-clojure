@@ -1,6 +1,6 @@
 (ns aoc-2025-clojure.solutions.day-07
   (:require [aoc-2025-clojure.utils :refer :all])
-  (:require [clojure.string :refer [split blank? includes?]]))
+  (:require [clojure.string :refer [includes?]]))
 
 ;; input parsing
 
